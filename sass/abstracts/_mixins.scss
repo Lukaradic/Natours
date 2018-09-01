@@ -1,0 +1,38 @@
+@mixin linkAndVisited{
+    text-decoration: none;
+    display: inline-block; 
+    padding: 1.5rem 4rem;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+}
+
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}
+
+@mixin blueGradient{
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+@mixin orangeGradient{
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+@mixin greenGradient{
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
