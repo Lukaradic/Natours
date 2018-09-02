@@ -1,10 +1,12 @@
 .btn{
-    &:link{
-        @include linkAndVisited;
-    }
+    &,
+    &:link,
     &:visited{
         @include linkAndVisited;
+        border: none;
+        cursor: pointer;
     }
+    
     &:hover{
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); 
@@ -13,7 +15,8 @@
             opacity: 0;  
         }
     }
-    &:active{
+    &:active, &:focus{
+        outline: none;
         transform: translateY(-.15rem);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);  
     }
@@ -77,6 +80,20 @@
     }
     &:active{
         transform: translateY(1px);
+    }
+    &__learn-more{
+        position: absolute;
+        left: 5%;
+    
+    }
+    &__read{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 

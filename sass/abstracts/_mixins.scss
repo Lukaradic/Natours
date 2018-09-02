@@ -36,3 +36,9 @@
     background: linear-gradient(to right bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+@mixin centerContent{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
