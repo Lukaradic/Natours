@@ -23,13 +23,13 @@
             </label>
            <div class="navigation__background">&nbsp;</div>
            <nav class="navigation__nav">
-               <ul class="navigation__list">
-                   <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
-                   <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Popular tours</a></li>
-                   <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Your Benifits</a></li>
-                   <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                   <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
-               </ul>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Your Benifits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+                </ul>
            </nav>
        </div>
         <header class="header">
@@ -103,7 +103,7 @@
             <section class="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary u-margin-bottom-big">most popular tours</h2>
-                    <div class="row">
+                    <div class="row" id="tours">
                         <div class="col-1-of-3">
                             <div class="card">
                                 <div class="card__side card__side--front card__side--front-1">
@@ -127,7 +127,7 @@
                                            <p class="card__price-only">only</p>
                                            <p class="card__price-value">$299</p>
                                        </div>
-                                       <a href="#" class="btn btn--white">Book Now!</a>
+                                       <a href="#popup" class="btn btn--white">Book Now!</a>
                                    </div>
                                     
                                 </div>
@@ -156,7 +156,7 @@
                                            <p class="card__price-only">only</p>
                                            <p class="card__price-value">$299</p>
                                        </div>
-                                       <a href="#" class="btn btn--white">Book Now!</a>
+                                       <a href="#popup" class="btn btn--white">Book Now!</a>
                                    </div>
                                     
                                 </div>
@@ -185,7 +185,7 @@
                                            <p class="card__price-only">only</p>
                                            <p class="card__price-value">$299</p>
                                        </div>
-                                       <a href="#" class="btn btn--white">Book Now!</a>
+                                       <a href="#popup" class="btn btn--white">Book Now!</a>
                                    </div>
                                     
                                 </div>
@@ -315,6 +315,13 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <a href="#tours" class="popup__content--button">&times;</a>
+                <h2 class="popup__heading heading-secondary">Book your dream tour now</h2>
+                <p class="poput__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat sequi quasi, voluptatem id. Quibusdam nesciunt maiores sequi accusantium eius labore ducimus blanditiis animi? Voluptas molestiae hic aliquid, ab excepturi.</p> 
+            </div>
+        </div>
     </body>
 </html>
 
