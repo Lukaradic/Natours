@@ -16,18 +16,6 @@
         top: 0;
         left: 0;
         width: 100%;        
-        &--front{
-            &-1{
-                
-            }
-            &-2{
-                
-            }
-            &-3{
-                
-            }
-            
-        }
         &--back{
             
             transform: rotateY(180deg);
@@ -147,7 +135,6 @@
         font-size: 6rem;
         font-weight: 100;
     }
-    
 }
 
 

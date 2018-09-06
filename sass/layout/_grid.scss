@@ -4,6 +4,10 @@
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        
+        @include respond(tablet-portrait){
+            margin-bottom: $gutter-vertical-small;
+        }    
     }
     
     @include clearfix;
@@ -13,7 +17,19 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            
+            @include respond(tablet-portrait){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
         }
+        @include respond(tablet-portrait){
+            width: 100% !important;
+        }
+    }
+    @include respond(tablet-portrait){
+            max-width: 45rem;
+            padding: 0 3rem;
     }
 
     .col-1-of-2 {

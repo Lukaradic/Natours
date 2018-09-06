@@ -15,6 +15,9 @@
         display: block;
         width: 90%;
         transition: all .5s;
+        @include respond(tablet-portrait){
+                width: 100%;
+            }
         
         &:focus:invalid{
             border-bottom: 3px solid $color-secondary-dark; 
@@ -51,6 +54,10 @@
         &group{
             display: inline-block;
             width: 40%;
+            @include respond(tablet-portrait){
+                margin-bottom: 2rem;
+                width: 100%;
+            }
     }
         &label{
             font-size: $default-font-size;

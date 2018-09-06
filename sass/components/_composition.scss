@@ -1,22 +1,60 @@
 .composition{
     position: relative;
+    @include respond(tablet-portrait){
+            margin-bottom: 20rem;
+        }
+    
     &__photo{
         width: 55%;
         box-shadow: 1rem 1.5rem 4rem rgba(black, .4);
         border-radius: 2px;
         position: absolute;
         transition: all .3s;
+        
         &--p1{
             left: 0;
-            top: -2rem; 
+            top: -2rem;
+            
+            @include respond(tablet-portrait){
+                left: -3rem;
+                top: 4rem;
+                
+            }
+            @include respond(phone){
+                transform: scale(.7);
+                
+            }
         }
         &--p2{
             right: 0;
             top: 2.5rem;
+            @include respond(tablet-portrait){
+                left: 15rem;
+                top: 2rem;
+                transform: scale(1.15);
+                z-index: 2;
+            }
+            @include respond(phone){
+                transform: scale(.8);
+                left: 10rem;
+                top: 2rem;
+                
+            }
         }
         &--p3{
             left: 23%;
             top: 11rem;
+            @include respond(tablet-portrait){
+                left: 30rem;
+                top: 5rem;
+                
+            }
+            @include respond(phone){
+                transform: scale(.7);
+                left: 22rem;
+                top: 5rem;
+                
+            }
             
         }
         &:hover{

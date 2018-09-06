@@ -84,7 +84,10 @@
     &__learn-more{
         position: absolute;
         left: 5%;
-    
+        @include respond(tablet-landscape){
+            position: relative;
+            
+        }
     }
     &__read{
         position: absolute;

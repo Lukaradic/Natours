@@ -12,6 +12,14 @@
         z-index: 20;
         position: fixed;
         cursor: pointer;
+        @include respond(tablet-portrait){
+            top: 4rem;
+            right: 3.5rem;
+    }
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+    }
     }
 
     &__background{
@@ -26,6 +34,15 @@
         box-shadow: 0 1rem 3rem rgba(black, .25);
         transition: all .8s;
         transition-timing-function:  cubic-bezire(.39,.71,1,.99);
+        
+        @include respond(tablet-portrait){
+            top: 4.2rem;
+            right: 3.9rem;
+    }
+        @include respond(phone){
+            top: 3.5rem;
+            right: 3.5rem;
+    }
         
     }
     &__nav{
